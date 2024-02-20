@@ -1,0 +1,73 @@
+/* App.css */
+.game {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: 'Arial', sans-serif;
+  margin-top: 50px;
+  /* background-color: #f0f0f0; */
+  /* Add your preferred background color here */
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.board {
+  border: 2px solid #333;
+  border-radius: 8px;
+  overflow: hidden;
+  width: 300px;
+  background-color: #fff;
+  /* Add your preferred background color here */
+}
+
+.status {
+  margin-bottom: 10px;
+  font-size: 20px;
+  font-weight: bold;
+  background-color: #eee;
+  padding: 10px;
+  border-bottom: 2px solid #333;
+  border-radius: 8px 8px 0 0;
+}
+
+.board-row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.square {
+  float: left;
+  width: 100px;
+  height: 100px;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  font-size: 36px;
+  font-weight: bold;
+  line-height: 100px;
+  border: 2px solid #eee;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.square:hover {
+  background-color: #f2f2f2;
+}
+
+.restart {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  background-color: #4caf50;
+  color: #fff;
+  border: none;
+  border-radius: 0 0 8px 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.restart:hover {
+  background-color: #45a049;
+}
